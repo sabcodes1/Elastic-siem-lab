@@ -3,7 +3,7 @@ outputs:
     type: elasticsearch
     hosts: ["http://localhost:9200"]
     username: "elastic"
-    password: ""
+    password: "NOT THE PASSWORD"
     protocol: "http"
     allow_self_signed: true
 
