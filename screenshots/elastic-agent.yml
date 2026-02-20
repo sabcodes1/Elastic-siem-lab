@@ -1,0 +1,16 @@
+outputs:
+  default:
+    type: elasticsearch
+    hosts: ["http://localhost:9200"]
+    username: "elastic"
+    password: ""
+    protocol: "http"
+    allow_self_signed: true
+
+inputs:
+  - name: windows-security-logs
+    type: winlog
+    streams:
+      - name: Security
+        data_stream:
+          dataset: windows.security
